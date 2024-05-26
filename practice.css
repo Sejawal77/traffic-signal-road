@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    font-family: Arial, sans-serif;
+}
+
+#game-area {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://img.freepik.com/free-vector/scene-with-house-garden_1308-94512.jpg?w=826&t=st=1716554038~exp=1716554638~hmac=584b0008d446a7e8917f4fbaed6b16eda4ad9d0aa581d8f9e224bd9ac307d41c');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+img {
+    width: 200px;
+    height: 160px;
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    transition: left 0.1s;
+}
+
+button {
+    padding: 5px 7px;
+    background-color: rgb(42, 208, 42);
+    color: black;
+    position: absolute;
+    top: 20%;
+    left: 47%;
+    width: 106px;
+    height: 39px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 24px;
+    cursor: pointer;
+    z-index: 10;
+}
+#reverse{
+    padding: 5px 7px;
+    background-color:black;
+    color: aqua;
+    position: fixed;
+    top: 22%;
+    left: 36%;
+    width: 106px;
+    height: 39px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 24px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+
+#traffic-signal {
+    width: 50px;
+    height: 150px;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.light {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: grey;
+}
+
+#red-light.active {
+    background-color: red;
+}
+
+#yellow-light.active {
+    background-color: yellow;
+}
+
+#green-light.active {
+    background-color: green;
+}
+
+#fine-counter {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 24px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#police-station {
+    width: 171px;
+    height: 79px;
+    background-color: blue;
+    color: white;
+    position: absolute;
+    top: 31%;
+    left: 38%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
